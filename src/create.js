@@ -30,10 +30,8 @@ function createGist() {
     		"User-Agent": "Gistifier 1.0"
     	}
     }
-    console.log(gistBody);
 
     request(options, function(error, response, body) {
-    	console.log(body);
     	console.log('Your Gist has been created at ' + body.html_url);
     	open(body.html_url);
     })
