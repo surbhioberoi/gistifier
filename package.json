@@ -1,0 +1,35 @@
+{
+  "name": "gistify",
+  "version": "1.0.0",
+  "description": "Create a GitHub gist with your current directory contents",
+  "main": "src/create.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Surbhi Oberoi <mail@surbhioberoi.com> (http://surbhioberoi.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "open": "0.0.5",
+    "request": "2.74.0"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "gistify": "src/create.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surbhioberoi/gistify.git"
+  },
+  "keywords": [
+    "create",
+    "gist",
+    "gistify",
+    "upload",
+    "gist"
+  ],
+  "bugs": {
+    "url": "https://github.com/surbhioberoi/gistify/issues"
+  },
+  "homepage": "https://github.com/surbhioberoi/gistify#readme"
+}
