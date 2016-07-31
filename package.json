@@ -1,5 +1,5 @@
 {
-  "name": "gistify",
+  "name": "gistifier",
   "version": "1.0.0",
   "description": "Create a GitHub gist with your current directory contents",
   "main": "src/create.js",
@@ -14,22 +14,21 @@
   },
   "preferGlobal": true,
   "bin": {
-    "gistify": "src/create.js"
+    "gistifier": "src/create.js"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/surbhioberoi/gistify.git"
+    "url": "git+https://github.com/surbhioberoi/gistifier.git"
   },
   "keywords": [
     "create",
     "gist",
-    "gistify",
-    "upload",
-    "gist"
+    "gistifier",
+    "upload"
   ],
   "bugs": {
-    "url": "https://github.com/surbhioberoi/gistify/issues"
+    "url": "https://github.com/surbhioberoi/gistifier/issues"
   },
-  "homepage": "https://github.com/surbhioberoi/gistify#readme"
+  "homepage": "https://github.com/surbhioberoi/gistifier#readme"
 }

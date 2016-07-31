@@ -6,7 +6,7 @@ var open = require('open');
 
 function createGist() {
     var gistBody = {
-        "description": "Exported using gistify",
+        "description": "Exported using gistifier",
         "public": false,
         "files": {}
     }
@@ -14,8 +14,11 @@ function createGist() {
     var data = fs.readdirSync("./");
 
     for (var i = 0; i < data.length; i++) {
-        if (!fs.lstatSync(data[i]).isDirectory()) {
-            gistBody.files[data[i]] = { "content": fs.readFileSync(data[i]).toString() };
+        if (data[i][0] != '.' && !fs.lstatSync(data[i]).isDirectory()) {
+        	var fileContent = fs.readFileSync(data[i]).toString();
+        	if(fileContent) {
+        		gistBody.files[data[i]] = { "content": fileContent};
+        	}
         }
     }
 
@@ -24,11 +27,13 @@ function createGist() {
     	method: "POST",
     	json: gistBody,
     	headers: {
-    		"User-Agent": "Gistify 1.0"
+    		"User-Agent": "Gistifier 1.0"
     	}
     }
+    console.log(gistBody);
 
     request(options, function(error, response, body) {
+    	console.log(body);
     	console.log('Your Gist has been created at ' + body.html_url);
     	open(body.html_url);
     })
