@@ -1,6 +1,6 @@
 ## Gistifier - A command line tool
 
-Create a gist from your current directory contents.
+Create a GitHub gist from your current directory contents.
 
 ### Installation
 
