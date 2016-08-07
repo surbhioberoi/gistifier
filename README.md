@@ -1,6 +1,6 @@
 ## Gistifier 
 
-Create a gist from your current directory contents.
+Create a Gist from a set of file(s).
 
 ### Installation
 
@@ -11,11 +11,30 @@ npm install -g gistifier
 
 ### How to use
 
-From your terminal go to the directory whose contents you want to use and run,
+From your terminal go to the directory where your files reside and run,
 
 ``` bash
-$ gistifier
+$ gistifier push <filename1> <filename2>
 ```
+
+To push all files in current directory top level
+
+```
+$ gistifier push
+```
+
+To make your Gist public
+
+```
+$ gisitifer push <filename> --public
+```
+
+OR
+
+```
+$ gisitifer push <filename> -p
+```
+
 
 ### Use Cases
 
