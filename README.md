@@ -1,6 +1,7 @@
-## Gistifier 
+## Gistifier - A command line tool
 
 Create a Gist from a set of file(s).
+
 
 ### Installation
 
